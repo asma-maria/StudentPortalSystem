@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <AnchorPane fx:id="homeDetailsPane" layoutY="116.0" prefHeight="461.0" prefWidth="1050.0">
+         <children>
+            <ImageView fitHeight="418.0" fitWidth="1036.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homeTopPanel" layoutY="-4.0" prefHeight="120.0" prefWidth="1050.0">
+         <children>
+            <Label layoutX="58.0" layoutY="35.0" text="Student Portal System" textFill="#f5f5f5">
+               <font>
+                  <Font name="Baskerville Old Face" size="41.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="homeButtonsPane" layoutX="673.0" layoutY="21.0" prefHeight="79.0" prefWidth="332.0">
+               <children>
+                  <JFXButton fx:id="homeLoginBtn" buttonType="RAISED" layoutX="29.0" layoutY="15.0" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #DE8313;" text="Login" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="homeExitButton" buttonType="RAISED" layoutX="183.0" layoutY="15.0" prefHeight="50.0" prefWidth="126.0" style="-fx-background-color: #870000;" text="Exit" textFill="#f2eded">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

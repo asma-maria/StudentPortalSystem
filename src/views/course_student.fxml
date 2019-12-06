@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #c5cae9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CourseStudentController">
+    <JFXComboBox fx:id="courseCombo" layoutX="551.0" layoutY="74.0" prefHeight="49.0" prefWidth="226.0" promptText="Select Course" style="-fx-background-color: #d0d8ff;" />
+    <JFXButton fx:id="addStudentBtn" layoutX="417.0" layoutY="229.0" prefHeight="49.0" prefWidth="112.0" style="-fx-background-color: #424242;" text="-&gt;" textFill="#f5f0f0">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></JFXButton>
+    <JFXTextField fx:id="searchStudent" layoutX="224.0" layoutY="86.0" onKeyReleased="#search" prefHeight="39.0" prefWidth="160.0" promptText="search student">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></JFXTextField>
+    <JFXListView fx:id="listView" layoutX="551.0" layoutY="138.0" prefHeight="301.0" prefWidth="226.0" />
+    <TableView fx:id="tableView" layoutX="64.0" layoutY="135.0" prefHeight="316.0" prefWidth="320.0">
+      <columns>
+          <TableColumn fx:id="tableId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tableName" prefWidth="75.0" text="name" />
+         <TableColumn fx:id="tableDepartment" prefWidth="75.0" text="department" />
+         <TableColumn fx:id="tableSemester" prefWidth="95.0" text="semester" />
+      </columns>
+    </TableView>
+    <JFXButton fx:id="removeStudentBtn" layoutX="417.0" layoutY="307.0" prefHeight="49.0" prefWidth="112.0" style="-fx-background-color: #e1bee7;" text="&lt;-">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></JFXButton>
+    <JFXButton fx:id="confirmBtn" layoutX="349.0" layoutY="477.0" prefHeight="64.0" prefWidth="248.0" style="-fx-background-color: #c62828;" text="Add Students to Course" textFill="#eeeaea">
+      <font>
+         <Font size="14.0" />
+      </font></JFXButton>
+</AnchorPane>

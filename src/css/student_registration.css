@@ -1,0 +1,28 @@
+.jfx-text-field{
+    -fx-text-fill : #FFFFFF;
+    -fx-prompt-text-fill: gray;
+}
+
+.label{
+    -fx-text-fill : #DE8313;
+}
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.jfx-snackbar-content {
+    -fx-border-radius: 5em;
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: #D47D12;
+}
+.jfx-snackbar-action {
+    -fx-text-fill: #ffffff;
+}
+.jfx-combo-box {
+	-fx-background-color:  #afc2cb;
+}
+
+.jfx-combo-box .label {
+	-fx-text-fill: #000000;
+}

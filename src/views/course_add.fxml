@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="courseAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CourseAddController">
+   <children>
+      <VBox layoutX="69.0" layoutY="106.0" prefHeight="311.0" prefWidth="254.0">
+         <children>
+            <JFXTextField fx:id="courseTitle" labelFloat="true" prefHeight="25.0" prefWidth="199.0" promptText="title">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="courseCode" labelFloat="true" promptText="code">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="selectTeacherCombo" prefHeight="32.0" prefWidth="271.0" promptText="Select Teacher">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="clearFieldsBtn" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #fbc02d;" text="Clear Fields">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="addCourseBtn" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #80cbc4;" text="Add Course">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tableView" layoutX="364.0" layoutY="106.0" prefHeight="286.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="tableId" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="tableTitle" prefWidth="100.0" text="title" />
+          <TableColumn fx:id="tableCode" prefWidth="101.0" text="code" />
+            <TableColumn fx:id="tableTeacher" prefWidth="95.0" text="teacher" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="deleteCourseBtn" alignment="CENTER" layoutX="480.0" layoutY="429.0" prefHeight="50.0" prefWidth="141.0" style="-fx-background-color: #9b0000;" text="Delete" textFill="#f8f5f5">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="searchCourse" layoutX="972.0" layoutY="49.0" onKeyReleased="#search" />
+   </children>
+</AnchorPane>

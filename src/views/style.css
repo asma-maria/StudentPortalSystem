@@ -1,0 +1,72 @@
+.button
+{
+    -fx-background-color : #191919;
+    -fx-text-fill : #e7e5e5;
+    -fx-border-radius : 30;
+}
+.button:hover{
+    -fx-background-color : #78561C;
+}
+.button:pressed
+{
+    -fx-background-color : #FED55F;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.jfx-text-field{
+    -fx-text-fill : #FFFFFF;
+}
+.jfx-password-field{
+    -fx-text-fill : #DE8313;
+    -fx-text-color : #DE8313
+}
+
+.jfx-button{
+    -fx-border-radius : 30px;
+}
+
+.jfx-snackbar-content {
+    -fx-border-radius: 5em;
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: #D47D12;
+}
+.jfx-snackbar-action {
+    -fx-text-fill: #78561C;
+}
+.jfx-combo-box {
+	-fx-background-color:  #78561C;
+}
+
+.jfx-combo-box .label {
+	-fx-text-fill: #000000;
+}

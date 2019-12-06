@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #c5cae9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CourseReviewController">
+   <JFXComboBox fx:id="courseCombo" focusColor="#eaecf2" layoutX="67.0" layoutY="64.0" prefHeight="25.0" prefWidth="185.0" promptText="Select Course" style="-fx-background-color: #b2fef7;" unFocusColor="#7c7070" />
+   <JFXTextArea fx:id="review" layoutX="61.0" layoutY="110.0" promptText="Enter your review here" style="-fx-background-color: #eeeeee;">
+      <padding>
+         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+      </padding>
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font>
+   </JFXTextArea>
+   <Button fx:id="submitBtn" layoutX="555.0" layoutY="319.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #4e342e;" text="Submit" textFill="#fffdfd">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Button>
+</AnchorPane>
